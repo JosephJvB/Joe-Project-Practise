@@ -1,0 +1,22 @@
+{
+"spots": [
+  {
+    "id": 1,
+    "name": "Waitangi Park",
+    "rating": "6.5/10",
+    "info": "avoid on Sundays, the nearby markets attract Yo-Pros and their spawn, you will have a bad time"
+  },
+  {
+    "id": 2,
+    "name": "Karori Ramps",
+    "rating": "8/10",
+    "info": "one vert ramp, one mini-ramp. Mini can get crowded on good days since it is uncontested best Wgtn mini-ramp. Both have skate-lite surface very nice and good transitions."
+  },
+  {
+    "id": 3,
+    "name": "Tree-Tops",
+    "rating": "6/10",
+    "info": "Wellys well loved DIY, mostly street terrain: boxes, rails, a few A-frames. There a few nice quarters, and a kooky mini-ramp."
+  }
+]
+}

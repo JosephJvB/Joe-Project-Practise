@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+img.logo {
+  height: 15%;
+  width: 15%
+}
+
+img.map {
+  height: 50%;
+  width: 50%;
+}
