@@ -1,4 +1,29 @@
-<div class="row">
+{{!-- <div class="row">
 <img class="logo" src="/images/skatelogo.png"><h1>Skate App: Spot-Map</h1>
 </div>
-<img class="map" src="/images/maplol.jpg">
+<img class="map" src="/images/maplol.jpg"> --}}
+<img class="logo" src="/images/skatelogo.png">
+<h1>Skate App: Spot-Map</h1>
+<div id="map"></div>
+<script>
+
+    function initMap() {
+      var options = {
+        zoom: 14,
+        center: {
+          lat: -41.2865,
+          lng: 174.7762
+        }
+      }
+      var map = new google.maps.Map(document.getElementById('map'), options)
+
+      var maker = new google.maps.Marker({
+        position:{
+          lat: -41.2865,
+          lng: 174.7762
+          },
+          map:map
+      })
+    }
+
+</script>

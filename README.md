@@ -15,3 +15,6 @@ res.render('spot', rightSpot)
 })
 
 router.post ('')
+
+
+API KEY: AIzaSyDk1HDURsBapeWkVQlt7a4dN7_wr5dKtiA
