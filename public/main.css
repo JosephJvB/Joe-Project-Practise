@@ -3,8 +3,8 @@ body {
 }
 
 img.logo {
-  height: 10%;
-  width: 10%
+  height: 50%;
+  width: 50%
 }
 
 img.map {
@@ -14,5 +14,5 @@ img.map {
 
 #map {
   height: 400px;
-  width: 100%
+  width: 70%
 }

@@ -5,8 +5,12 @@ const data = require('./data')
 //const fs = require('fs') wont need till read/writefile
 
 //routes!!
+router.get('/', (req, res) => {
+  res.render('')
+})
+
 router.get('/skateApp', (req, res) => {
-res.render('skateApp', data)
+res.render('map', data)
 })
 
 

@@ -2,9 +2,11 @@
 <img class="logo" src="/images/skatelogo.png"><h1>Skate App: Spot-Map</h1>
 </div>
 <img class="map" src="/images/maplol.jpg"> --}}
-<img class="logo" src="/images/skatelogo.png">
-<h1>Skate App: Spot-Map</h1>
-<div id="map"></div>
+{{>header}}
+<section class="section">
+<div id="map" class="container">
+</div>
+</section>
 <script>
 
     function initMap() {
@@ -27,3 +29,6 @@
     }
 
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk1HDURsBapeWkVQlt7a4dN7_wr5dKtiA&callback=initMap" async
+  defer></script>
+  
