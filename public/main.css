@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: ;
   background-color: #8da792 
 }
 
@@ -13,10 +13,13 @@ img.map {
 }
 
 #map {
+  margin-top: -50px;
   height: 400px;
   width: 70%;
 }
 
 #header {
+  padding-top: 20px;
+  margin-bottom: -25px;
   background-color: #a9cfac;
 }
