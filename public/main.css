@@ -1,5 +1,4 @@
 body {
-  text-align: ;
   background-color: #8da792 
 }
 
@@ -15,11 +14,18 @@ img.map {
 #map {
   margin-top: -50px;
   height: 400px;
-  width: 70%;
+  width: 80%;
 }
 
 #header {
   padding-top: 20px;
   margin-bottom: -25px;
   background-color: #a9cfac;
+}
+
+#info {
+  margin-left: 20px;
+  margin-top: -50px;
+  height: 400px;
+  background-color: #e3efe4;
 }
