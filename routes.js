@@ -19,6 +19,6 @@ router.get('/skateApp/spots/:id', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  res.send('<a href="/skateApp">butts</a>')
+  res.send('<a href="/skateApp">touch my butt</a>')
 })
 module.exports = router
