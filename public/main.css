@@ -1,10 +1,10 @@
 body {
   text-align: center;
+  background-color: #8da792 
 }
 
 img.logo {
-  height: 50%;
-  width: 50%
+  width: 80px
 }
 
 img.map {
@@ -14,5 +14,9 @@ img.map {
 
 #map {
   height: 400px;
-  width: 70%
+  width: 70%;
+}
+
+#header {
+  background-color: #a9cfac;
 }
