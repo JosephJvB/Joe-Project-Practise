@@ -13,7 +13,7 @@ img.map {
 
 #map {
   margin-top: -50px;
-  height: 400px;
+  height: 650px;
   width: 80%;
 }
 
@@ -26,6 +26,6 @@ img.map {
 #info {
   margin-left: 20px;
   margin-top: -50px;
-  height: 400px;
+  height: 650px;
   background-color: #e3efe4;
 }

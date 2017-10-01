@@ -4,8 +4,10 @@
   "description": "its all about getting out there on the day and getting involved",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index"
+    "knex": "knex",
+    "debug": "node --inspect --debug-brk index.js",
+    "start": "nodemon index",
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,15 @@
     "url": "https://github.com/JosephJvB/Joe-Project-Practise/issues"
   },
   "homepage": "https://github.com/JosephJvB/Joe-Project-Practise#readme",
-
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
+    "knex": "^0.13.0",
     "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "sqlite3": "^3.1.13"
   }
 }

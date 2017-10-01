@@ -16,25 +16,42 @@
     </div>
   </div>
 </section>
+<div class="container">
+{{>footer}}
+</div>
 <script>
 
     function initMap() {
       var options = {
-        zoom: 14,
+        zoom: 13,
         center: {
-          lat: -41.2865,
-          lng: 174.7762
+          lat: -41.300000,
+          lng:  174.772779
         }
       }
       var map = new google.maps.Map(document.getElementById('map'), options)
+          
+      
+        //Marker-Array
+        var markers = [
+            {lat: -41.292010, lng: 174.784688}, //waitangi
+            {lat: -41.321686, lng: 174.780642}, //treetops
+            {lat: -41.279619, lng: 174.754061} // karori
+          ]
 
-      var maker = new google.maps.Marker({
-        position:{
-          lat: -41.2865,
-          lng: 174.7762
-          },
-          map:map
-      })
+        markers.forEach(coords => {
+          addMarker(coords)
+        })
+
+
+        //addMarker function
+        function addMarker (coords) {
+          var marker = new google.maps.Marker({
+            position: coords,
+            map: map
+  })
+}
+
     }
 
 </script>
