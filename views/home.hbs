@@ -16,6 +16,9 @@
     </div>
   </div>
 </section>
+<div class="container">
+{{>footer}}
+</div>
 <script>
 
     function initMap() {
@@ -27,32 +30,28 @@
         }
       }
       var map = new google.maps.Map(document.getElementById('map'), options)
-    
+          
+      
+        //Marker-Array
+        var markers = [
+            {lat: -41.292010, lng: 174.784688},
+            {lat: -41.321686, lng:  174.780642},
+            {lat: -41.279619, lng:  174.754061}
+          ]
+
+        markers.forEach(coords => {
+          addMarker(coords)
+        })
 
 
-      var WaitangiMarker = new google.maps.Marker({
-        position:{
-          lat: -41.292010,
-          lng: 174.784688
-          },
-          map:map
-      })
+        //addMarker function
+        function addMarker (coords) {
+          var marker = new google.maps.Marker({
+            position: coords,
+            map: map
+  })
+}
 
-      var TreeTopsMarker = new google.maps.Marker({
-        position:{
-          lat: -41.321686,
-          lng:  174.780642
-          },
-          map:map
-      })
-
-      var KminiMarker = new google.maps.Marker({
-        position:{
-          lat: -41.279619,
-          lng:  174.754061
-          },
-          map:map
-      })
     }
 
 </script>
