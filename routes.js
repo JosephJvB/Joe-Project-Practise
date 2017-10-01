@@ -1,8 +1,9 @@
 
 const express = require('express')
 const router = express.Router()
-const data = require('./data')
-// const fs = require('fs') wont need till read/writefile
+const data = require('./data') //gonna remove this once i get database set up
+
+// const db = require('/db') << DATABASE STUFF
 
 // routes!!
 
