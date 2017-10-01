@@ -1,3 +1,5 @@
+// const path = require('path')
+
 const express = require('express')
 const hbs = require('express-handlebars')
 const bodyParser = require('body-parser')
@@ -13,7 +15,7 @@ app.engine('hbs', hbs({
 }))
 app.set('view engine', 'hbs')
 app.use(express.static('public'))
-app.set('views', path.join(__dirname, 'views')) //added this from an example
+// app.set('views', path.join(__dirname, 'views')) //added this from an example
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/', routes)
 
