@@ -6,7 +6,8 @@ exports.up = function (knex, Promise) {
     table.string('terrain')
     table.string('photos')
     table.integer('likes')
-    table.string('coords_id').references('coords.id')
+    table.integer('lat')
+    table.integer('lng')
   })
 }
 

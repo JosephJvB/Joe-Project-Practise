@@ -7,11 +7,11 @@ const data = require('./data') //gonna remove this once i get database set up
 
 // routes!!
 
-router.get('/skateApp', (req, res) => {
-  res.render('home', data)
+router.get('/', (req, res) => {
+  res.render('home')
 })
 
-router.get('/skateApp/spots/:id', (req, res) => {
+router.get('/spots/:id', (req, res) => {
   const id = Number(req.params.id)
   const thatSpot = data.spots.find((spot) => {
     return spot.id === id
@@ -19,7 +19,4 @@ router.get('/skateApp/spots/:id', (req, res) => {
   res.render('spot', thatSpot)
 })
 
-router.get('/', (req, res) => {
-  res.send('<a href="/skateApp">touch my butt</a>')
-})
 module.exports = router
