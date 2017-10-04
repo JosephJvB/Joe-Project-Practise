@@ -1,7 +1,7 @@
 module.exports = {
-  x: x
+  getSpotInfo: getSpotInfo
 }
 
-function x () {
-  return 'butts'
+function getSpotInfo () {
+  return Harrison
 }
