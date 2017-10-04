@@ -20,3 +20,7 @@ router.get('/spots/:id', (req, res) => {
 })
 
 module.exports = router
+
+
+table.integer('lat')
+table.integer('lng')
